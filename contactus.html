@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/logo.png" alt="learnwithleaders">
+            </a>
+            <button class="our-offerings-button">Our Offerings <span>&#8964;</span> </button>
+        </div>
+        <nav>
+            <button class="lets-talk-button">Let's Talk <span style="font-weight: bold;">></span> </button>
+        </nav>
+    </header>
+    <section class=" py-12 w-full">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.812443803069!2d103.848966!3d1.286597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190bb4fc3a3d%3A0xb6005bbce4d65656!2s72%20Circular%20Rd%2C%20%2302-01%2C%20Singapore%20049426!5e0!3m2!1sen!2sin!4v1703133961502!5m2!1sen!2sin"
+            height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="w-full"></iframe>
+        <div class="w-full bg-[#202020]  mt-[-220px]  mb-8 flex justify-center items-center ">
+
+            <div class="w-[90%] sm:w-[80%]">
+                <div
+                    class="w-full py-8   flex-col  sm:flex-row   justify-center items-center space-x-4 space-y-4 bg-[#121212]  border-b-[1px] border-white border-solid">
+                    <p for="text" class="text-sm   text-[#df9f16] ml-8">OFFICE LOCATIONS</p>
+                    <p class="text-[#df9f16] text-4xl"><i class="fa-solid fa-location-dot mx-4"></i>Singapore</p>
+
+                </div>
+
+                <div
+                    class="w-full py-8  flex flex-col  sm:flex-row  justify-center items-center  bg-[#121212]  space-y-4 sm:space-y-0 border-b-[1px] border-white border-solid">
+                    <div>
+
+                        <a href="team@learnwithleaders.com"><button
+                                class="text-xs lg:text-xl border-[1px] border-solid border-white rounded-md  ml-1 sm:ml-8  px-2 sm:px-4 py-1 sm:py-2  "><i
+                                    class="fa-regular fa-envelope mx-4"></i>TEAM@LEARNWITHLEADERS.COM</button>
+                        </a>
+                    </div>
+                    <div>
+
+                        <button class=" border-[1px] border-solid border-white ml-8 rounded-md px-4 py-2"><i
+                                class="fa-brands fa-whatsapp mx-4"></i>+44 7868813293</button>
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="w-full h-[40vh] flex flex-col  sm:flex-row   justify-center items-center space-x-4 space-y-4 bg-[#121212] py-4 mb-12">
+                    <p for="text" class="text-2xl font-thin mr-6 sm:mx-4 mt-2">JOIN THE CHANGEMAKERS</p>
+                    <div>
+
+                        <input type="text" placeholder="Enter your Email-Id"
+                            class="outline-none bg-transparent rounded-sm">
+                        <button
+                            class="border-[1px] border-[#df9f16] text-[#df9f16] px-8 py-2 my-2 rounded-sm sm:m-4 ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-links-container">
+            <div class="footer-link-section">
+                <p class="footer-links-header"> Reach us</p>
+                <ul>
+                    <li class="footer-links" style="text-decoration: underline;">team@learnwithleaders.com</li>
+                    <li class="footer-links">Singapore</li>
+                    <li class="footer-links">India</li>
+                </ul>
+            </div>
+            <div class="footer-link-section">
+                <p class="footer-links-header">Quick Links</p>
+                <ul>
+                    <li class="footer-links">Gallery</li>
+                    <li class="footer-links">Blog & Media</li>
+                    <li class="footer-links">Contact us</li>
+                    <li class="footer-links">About us</li>
+                </ul>
+            </div>
+            <div class="footer-link-section">
+                <p class="footer-links-header">FAQ's</p>
+                <ul>
+                    <li class="footer-links"> <a href="faq.html">What is Learn with Leaders?</a></li>
+                    <li class="footer-links"><a href="faq.html">How to apply for a program?</a></li>
+                    <li class="footer-links"><a href="faq.html">What is the selection process?</a></li>
+                    <li class="footer-links"><a href="faq.html">How do I contact LwL?</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <div class="footer-social-links-container">
+                <ul class="social-media-links">
+
+                    <li><i class="fa-brands fa-facebook-f" style="font-size: x-large; "></i></li>
+                    <li><i class="fa-brands fa-twitter" style="font-size: x-large;"></i></li>
+                    <li><i class="fa-brands fa-instagram" style="font-size: x-large;"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in" style="font-size: x-large;"></i></li>
+                </ul>
+            </div>
+            <p>© 2022 Learnwithleaders. All rights reserved</p>
+            <p class="disclaimer">Disclaimer: All the courses and programs provided on our website are not provided by
+                Harvard or any other
+                university. All the courses and programs are created and organized by student clubs and student
+                organizations of various universities. The student clubs and student organisations are run and operated
+                independently by undergraduates of universities. We, Learn with Leaders, are the partner platform of the
+                student clubs and student organisations amplifying the remarkable autonomy and responsibility shouldered
+                by these driven clubs and organisations, promoting the significance and effectiveness of these impactful
+                programs.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

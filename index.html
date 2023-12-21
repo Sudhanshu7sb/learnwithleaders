@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Learn With Leaders</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/logo.png" alt="learnwithleaders">
+            </a>
+            <button class="our-offerings-button">Our Offerings <span>&#8964;</span> </button>
+        </div>
+        <nav>
+            <button class="lets-talk-button">Let's Talk <span style="font-weight: bold;">></span> </button>
+        </nav>
+    </header>
+    <!-- offline programs -->
+
+    <section>
+        <div class="flex justify-evenly">
+            <h2>Offline Programs (In Diffrent Countries)</h2>
+            <div>
+                <button id="prev"> <i class="fa-solid fa-arrow-left-long text-[#df9f16]"></i></button>
+                <button id="next"><i class="fa-solid fa-arrow-right-long text-[#df9f16] mx-2"></i></button>
+            </div>
+        </div>
+        <div>
+            <div class="cards-container sm:hidden" id="cardsContainer">
+                <!-- Your div cards go here -->
+                <div class="card rounded-md relative ">
+                    <img src=" https://learnwithleaders.com/wp-content/uploads/2022/12/New-Project-4.jpg" alt="India"
+                        class="rounded-md h-[400px]">
+                    <div class="absolute bottom-0 bg-black w-full text-start">
+
+                        <h2>India</h2>
+                        <p><i class="fa-solid fa-arrow-right-long text-[#df9f16] mx-2"></i></p>
+                    </div>
+                </div>
+                <div class="card rounded-md relative ">
+                    <img src=" https://learnwithleaders.com/wp-content/uploads/2022/12/New-Project-2.jpg"
+                        alt="Indonasia" class="rounded-md h-[400px]">
+                    <div class="absolute bottom-0 bg-black w-full text-start">
+
+                        <h2>Indonasia</h2>
+                        <p><i class="fa-solid fa-arrow-right-long text-[#df9f16] mx-2"></i></p>
+                    </div>
+                </div>
+                <div class="card rounded-md relative ">
+                    <img src=" https://learnwithleaders.com/wp-content/uploads/2023/04/landmarks-of-malaysia.jpg"
+                        alt="Malaysia" class="rounded-md h-[400px]">
+                    <div class="absolute bottom-0 bg-black w-full text-start">
+
+                        <h2>Malaysia</h2>
+                        <p><i class="fa-solid fa-arrow-right-long text-[#df9f16] mx-2"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- stats section -->
+    <section class="stats w-full bg-[#131313]">
+        <div class="flex justify-center items-center w-full">
+
+            <div class="stats-container py-8 bg-[#202020] w-[80%] flex justify-center items-center">
+                <div class="stats-numbers flex flex-col justify-center items-center ">
+                    <h3 class=" text-7xl font-bold text-center">Be a part of 15,000+ changemakers now!</h3>
+                    <p class="text-sm text-[#878575] my-4 text-center">The potential to learn for a middle and high
+                        school student is
+                        limitless</p>
+                    <div
+                        class="w-full flex flex-col lg:flex-row flex-wrap justify-evenly items-centerspace-x-8 space-y-8">
+                        <div class="flex justify-center">
+                            <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/carbon_group-presentation.svg"
+                                alt="">
+                        </div>
+                        <div class="flex justify-center">
+
+                            <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/fa_globe.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+
+                            <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/ph_users-three.svg"
+                                alt="">
+                        </div>
+                        <div class="flex justify-center">
+
+                            <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/ep_school.svg" alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="w-full flex flex-col lg:flex-row flex-wrap justify-evenly items-center space-x-8 space-y-8 mt-8">
+                        <div>
+                            <p class="text-5xl font-bold text-[#df9f16]">40+ </p>
+                            <p class="text-2xl text-[#878575] font-bold">Programs</p>
+                        </div>
+                        <div>
+                            <p class="text-5xl font-bold text-[#df9f16]">80+</p>
+                            <p class="text-2xl text-[#878575] font-bold">Countries</p>
+                        </div>
+                        <div>
+
+                            <p class="text-5xl font-bold text-[#df9f16]">15k+</p>
+                            <p class="text-2xl text-[#878575] font-bold">Participants</p>
+                        </div>
+                        <div>
+
+                            <p class="text-5xl font-bold text-[#df9f16]">1k+</p>
+                            <p class="text-2xl text-[#878575] font-bold">Schools</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full h-[40vh] bg-[#121212] flex flex-col justify-center items-center space-y-2 py-8">
+            <h2 class="sm:text-2xl text-4xl font-bold text-center">Students and alumni love our programs</h2>
+            <p class="text-[#878575] text-center">What people are saying about us</p>
+        </div>
+        <hr class="text-[#878575]">
+        <div
+            class="w-full h-[40vh]  flex flex-col  sm:flex-row   justify-center items-center space-x-4 space-y-4 bg-[#121212] my-4">
+            <p for="text" class="text-2xl font-thin mr-6 sm:mx-4 mt-2">JOIN THE CHANGEMAKERS</p>
+            <div>
+
+                <input type="text" placeholder="Enter your Email-Id" class="outline-none bg-transparent rounded-sm">
+                <button
+                    class="border-[1px] border-[#df9f16] text-[#df9f16] px-8 py-2 my-2 rounded-sm sm:m-4 ">Submit</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-links-container">
+            <div class="footer-link-section">
+                <p class="footer-links-header"> Reach us</p>
+                <ul>
+                    <li class="footer-links" style="text-decoration: underline;">team@learnwithleaders.com</li>
+                    <li class="footer-links">Singapore</li>
+                    <li class="footer-links">India</li>
+                </ul>
+            </div>
+            <div class="footer-link-section">
+                <p class="footer-links-header">Quick Links</p>
+                <ul>
+                    <li class="footer-links"><a href="gallery.html">Gallery</a></li>
+                    <li class="footer-links">Blog & Media</li>
+                    <li class="footer-links"><a href="contactus.html">Contact us</a></li>
+                    <li class="footer-links">About us</li>
+                </ul>
+            </div>
+            <div class="footer-link-section">
+                <p class="footer-links-header">FAQ's</p>
+                <ul>
+                    <li class="footer-links">What is Learn with Leaders?</li>
+                    <li class="footer-links">How to apply for a program?</li>
+                    <li class="footer-links">What is the selection process?</li>
+                    <li class="footer-links">How do I contact LwL?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-disclaimer">
+            <div class="footer-social-links-container">
+                <ul class="social-media-links">
+
+                    <li><i class="fa-brands fa-facebook-f" style="font-size: x-large; "></i></li>
+                    <li><i class="fa-brands fa-twitter" style="font-size: x-large;"></i></li>
+                    <li><i class="fa-brands fa-instagram" style="font-size: x-large;"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in" style="font-size: x-large;"></i></li>
+                </ul>
+            </div>
+            <p>© 2022 Learnwithleaders. All rights reserved</p>
+            <p class="disclaimer">Disclaimer: All the courses and programs provided on our website are not provided by
+                Harvard or any other
+                university. All the courses and programs are created and organized by student clubs and student
+                organizations of various universities. The student clubs and student organisations are run and operated
+                independently by undergraduates of universities. We, Learn with Leaders, are the partner platform of the
+                student clubs and student organisations amplifying the remarkable autonomy and responsibility shouldered
+                by these driven clubs and organisations, promoting the significance and effectiveness of these impactful
+                programs.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardsContainer = document.getElementById('cardsContainer');
+            const cards = document.querySelectorAll('.card');
+            let currentIndex = 0;
+            let autoScrollInterval;
+            let touchStartX = 0;
+
+            function showCard(index) {
+                cards.forEach((card, i) => {
+                    if (i === index) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            function nextCard() {
+                currentIndex = (currentIndex + 1) % cards.length;
+                showCard(currentIndex);
+            }
+
+            function prevCard() {
+                currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+                showCard(currentIndex);
+            }
+
+            function startAutoScroll() {
+                autoScrollInterval = setInterval(nextCard, 3000); // Change card every 3 seconds (adjust as needed)
+            }
+
+            function stopAutoScroll() {
+                clearInterval(autoScrollInterval);
+            }
+
+            function handleTouchStart(event) {
+                touchStartX = event.touches[0].clientX;
+            }
+
+            function handleTouchEnd(event) {
+                const touchEndX = event.changedTouches[0].clientX;
+                const swipeThreshold = 50; // Adjust the threshold as needed
+
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    stopAutoScroll();
+                    nextCard();
+                    //   startAutoScroll();
+                } else if (touchEndX > touchStartX + swipeThreshold) {
+                    stopAutoScroll();
+                    prevCard();
+                    //   startAutoScroll();
+                }
+            }
+
+            cardsContainer.addEventListener('touchstart', handleTouchStart);
+            cardsContainer.addEventListener('touchend', handleTouchEnd);
+
+            document.getElementById('prev').addEventListener('click', function () {
+                stopAutoScroll();
+                prevCard();
+                // startAutoScroll();
+            });
+
+            document.getElementById('next').addEventListener('click', function () {
+                stopAutoScroll();
+                nextCard();
+                // startAutoScroll();
+            });
+
+            // Initial setup
+            showCard(currentIndex);
+            //   startAutoScroll();
+        });
+    </script>
+</body>
+
+</html>
