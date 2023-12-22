@@ -29,6 +29,50 @@
         }
       </style>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            flex-wrap: wrap;
+            color: #4a4a4a;
+            padding: 10px;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            /* margin: 0 5px; */
+            border-bottom: 1px solid #202020;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* padding: 20px; */
+        }
+
+        /* .tab-card {
+            /* border: 1px solid #ddd; */
+            /* border-radius: 8px; */
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+            /* margin: 10px; */
+            /* padding: 20px; */
+            /* width: 200px; */
+            /* text-align: center; */
+            /* background-color: white; */
+        /* } */ 
+
+        .active-tab {
+            color: #df9f16;
+            border-bottom: 1px solid #df9f16;
+        }
+    </style>
     <title>Learn With Leaders</title>
 </head>
 
@@ -44,6 +88,318 @@
             <button class="lets-talk-button">Let's Talk <span style="font-weight: bold;">></span> </button>
         </nav>
     </header>
+
+    <!--fellowships  -->
+
+
+    <!-- gallery section -->
+
+    <section class="bg-[#121212] w-full flex flex-col justify-center items-center pb-12">
+        <div class="w-[90%] ml-8">
+            <h2 class="font-semibold " style="font-size:34px;">Gallery</h2>
+        </div>
+
+        <div class="tabs bg-[#121212]">
+            <div class="tab active-tab " onclick="openTab(1)">In-School Programs</div>
+            <div class="tab " onclick="openTab(2)">Impact Stories</div>
+            <div class="tab " onclick="openTab(3)">Testimonials</div>
+            <div class="tab " onclick="openTab(4)">Community Events</div>
+        </div>
+
+        <div class="tab-content w-[90%]" id="tab1">
+            <div class="cards">
+                <!-- Placeholder cards for Tab 1 -->
+                <div
+                    class="tab-card w-full h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-08-09-at-12.58.53-PM-5.jpeg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-08-09-at-12.58.53-PM-5.jpeg"
+                            alt="Indonesia| Binus School Simprug"
+                            class="h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-08-09-at-12.58.53-PM-5.jpeg">
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+
+                            <h5 class="font-bold text-xl">Indonesia| Binus School Simprug</h5>
+                            <p class=" my-4">Students conceptualized novel business ideas addressing
+                                real-world issues</p>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/DSC_0421.resized.resized.jpg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/DSC_0421.resized.resized.jpg"
+                            alt="USA| Beekmantown High School" class="h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/DSC_0421.resized.resized.jpg">
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10 ">
+                            <h5 class="font-bold text-xl">USA| Beekmantown High School</h5>
+                            <p class="my-4">Students learn the importance of body language, team-work,
+                                and communication in leadership through fun activities.</p>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/3.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/3.jpg"
+                            alt="UAE| GEMS Wellington Academy" class="h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/3.jpg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">UAE| GEMS Wellington Academy</h5>
+                            <p class=" my-4">Students felt inspired and empowered, ready to make a
+                                positive impact in their community and beyond!</p>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Snapinsta.app_361634846_18272556274148369_7107897547663447606_n_1080.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Snapinsta.app_361634846_18272556274148369_7107897547663447606_n_1080.jpg"
+                            alt="Germany| St George British International School"
+                            class="h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Snapinsta.app_361634846_18272556274148369_7107897547663447606_n_1080.jpg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Germany| St George British International School</h5>
+                            <p class=" my-4">Students crafted captivating elevator pitches to entice
+                                potential investors</p>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-06-19-at-12.00.52-PM.jpeg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-06-19-at-12.00.52-PM.jpeg"
+                            alt="Turkey| MEF International School"
+                            class=" h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-06-19-at-12.00.52-PM.jpeg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Turkey| MEF International School</h5>
+                            <p class=" my-4">Students received useful tips for doing business and learnt
+                                how to negotiate and solve problems</p>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/2.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/2.jpg"
+                            alt="Brazil| Escola Bilíngue Pueri Domus School"
+                            class="h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/2.jpg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Brazil| Escola Bilíngue Pueri Domus School</h5>
+                            <p class=" my-4">Students learned to master pitch, inflection, rhythm, volume,
+                                pauses, pronunciation and the art of persuading</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content w-[90%]" id="tab2">
+            <div class="cards">
+                <!-- Placeholder cards for Tab 2 -->
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Taarush-conducts-Creative-Learning-Programs-for-Primary-School-Students.jpeg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Taarush-conducts-Creative-Learning-Programs-for-Primary-School-Students.jpeg"
+                            alt="Taarush | India" class="h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Taarush-conducts-Creative-Learning-Programs-for-Primary-School-Students.jpeg">
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+
+                            <h5 class="font-bold text-xl">Taarush | India</h5>
+                            <p class=" my-4">Taarush from India and Alumnus of Take the World Forward
+                                Fellowship conducts creative learning programs for under-privileged children</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Ruhaan-creating-Eco-Friendly-Bags.png">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Ruhaan-creating-Eco-Friendly-Bags.png"
+                            alt="Ruhaan | UAE" class="h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Ruhaan-creating-Eco-Friendly-Bags.png">
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Ruhaan | UAE</h5>
+                            <p class=" my-4">Ruhaan from UAE and Participant of Future Entrepreneurs
+                                Program creates Eco-friendly Bags</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Gulsum-teaches-English-at-a-Rural-Camp-at-Azerbaijan.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Gulsum-teaches-English-at-a-Rural-Camp-at-Azerbaijan.jpg"
+                            alt="Gulsum | Azerbaijan" class="h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Gulsum-teaches-English-at-a-Rural-Camp-at-Azerbaijan.jpg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Gulsum | Azerbaijan</h5>
+                            <p class=" my-4">Gulsum from Azerbaijan and Participant of the Debating World
+                                Cup teaches English and Communication Skills to rural children at Azerbaijan</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative my-8">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Akshada-trains-students-and-plants-trees-as-part-of-the-Sustainable-Spaces-program-in-Schools-at-Dubai-1-scaled.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Akshada-trains-students-and-plants-trees-as-part-of-the-Sustainable-Spaces-program-in-Schools-at-Dubai-1-scaled.jpg"
+                            alt="Akshada | UAE" class="h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Akshada-trains-students-and-plants-trees-as-part-of-the-Sustainable-Spaces-program-in-Schools-at-Dubai-1-scaled.jpg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Akshada | UAE</h5>
+                            <p class="text-[#878575] my-4">Akshada from UAE, and Participant of the Take the World
+                                Forward Fellowship trains students and plants trees as part of the Sustainable Spaces
+                                program in Dubai</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content w-[90%]" id="tab3">
+            <div class="cards">
+                <!-- Placeholder cards for Tab 3 -->
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/ygN5F82dNY8-MQ.jpg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/ygN5F82dNY8-MQ.jpg"
+                            alt="Gulsum | Azerbaijan | Debating World Cup" class="w-full h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/ygN5F82dNY8-MQ.jpg">
+                        <div class="py-2 px-2">
+
+                            <h5 class="font-bold text-xl">Gulsum | Azerbaijan | Debating World Cup</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/qRbEDhc1KOY-MQ.jpg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/qRbEDhc1KOY-MQ.jpg"
+                            alt="Taarush | India | Take the World Forward Fellowship" class="w-full h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/qRbEDhc1KOY-MQ.jpg">
+                        <div class="py-2 px-2">
+                            <h5 class="font-bold text-xl">Taarush | India | Take the World Forward Fellowship</h5>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/txSumJDbG4o-MQ.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/txSumJDbG4o-MQ.jpg"
+                            alt="Sofia | Mexico | Sustainability and Innovation Challenge" class="w-full h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/txSumJDbG4o-MQ.jpg">
+
+                        <div class="py-2 px-2">
+                            <h5 class="font-bold text-xl">Sofia | Mexico | Sustainability and Innovation Challenge</h5>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content w-[90%]" id="tab4">
+            <div class="cards">
+                <!-- Placeholder cards for Tab 4 -->
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/314819535_638042417991007_5549113571662691431_n-1.jpg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/314819535_638042417991007_5549113571662691431_n-1.jpg"
+                            alt="Leadership" class="w-full h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/314819535_638042417991007_5549113571662691431_n-1.jpg">
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+
+                            <h5 class="font-bold text-xl">Leadership</h5>
+                            <p class=" my-4">Our Young Leaders and Changemakers at the Summer Leadership
+                                Workshop at Scottish High International School in India</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/At-the-MUN-Conference-scaled.jpg">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/At-the-MUN-Conference-scaled.jpg"
+                            alt="Debating" class="w-full h-[309px]">
+                    </a>
+                    <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/At-the-MUN-Conference-scaled.jpg">
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Debating</h5>
+                            <p class=" my-4">High School Students showcasing their debating and policy
+                                writing skills at the MUN & Communication Training Workshop and Conference</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Explaining-the-Rules-of-the-Competition-scaled.jpg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Explaining-the-Rules-of-the-Competition-scaled.jpg"
+                            alt="Speech" class="w-full h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/Explaining-the-Rules-of-the-Competition-scaled.jpg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Speech</h5>
+                            <p class=" my-4">Improving speech and listening skills through fun games and
+                                activities</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-20-at-5.47.58-PM.jpeg">
+
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-20-at-5.47.58-PM.jpeg"
+                            alt="Photography" class="w-full h-[309px]">
+                    </a>
+                    <a
+                        href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-20-at-5.47.58-PM.jpeg">
+
+                        <div class="py-2 px-2 absolute bottom-0 text-[#E3E2E2] bg-black/10">
+                            <h5 class="font-bold text-xl">Photography</h5>
+                            <p class=" my-4">Students sharing their passion for photography through a
+                                Visual Contest</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- offline programs -->
@@ -163,8 +519,7 @@
             <div class="masterclass-cards-container sm:hidden" id="masterclassCardsContainer">
                 <!-- Your div cards go here -->
                 <div class="masterclass-card px-3 w-full h-[409px] rounded-md relative ">
-                    <img src="images/masterclass/Event img 1.jpg" alt="India"
-                        class="rounded-md h-[408px] w-[100%]">
+                    <img src="images/masterclass/Event img 1.jpg" alt="India" class="rounded-md h-[408px] w-[100%]">
                     <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
                         <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Fellowship</h3>
                         <div class="w-full text-start bg-black/10  ">
@@ -184,8 +539,7 @@
                     </div>
                 </div>
                 <div class="masterclass-card px-3 w-full  h-[409px] rounded-md relative ">
-                    <img src="images/masterclass/Event img 2.jpg" alt="Indonasia"
-                        class="rounded-md h-[408px] w-[100%]">
+                    <img src="images/masterclass/Event img 2.jpg" alt="Indonasia" class="rounded-md h-[408px] w-[100%]">
                     <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
                         <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Certificate Programs</h3>
                         <div class="w-full text-start bg-black/10  ">
@@ -205,12 +559,12 @@
                     </div>
                 </div>
                 <div class="masterclass-card px-3 w-full  h-[409px] rounded-md relative ">
-                    <img src="images/masterclass/Event img 3.jpg" alt="Malaysia"
-                        class="rounded-md h-[408px] w-[100%]">
+                    <img src="images/masterclass/Event img 3.jpg" alt="Malaysia" class="rounded-md h-[408px] w-[100%]">
                     <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
                         <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Certificate Programs</h3>
                         <div class="w-full text-start bg-black/10  ">
-                            <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies</h2>
+                            <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies
+                            </h2>
                             <div class="flex justify-start space-x-4 ">
                                 <div>
                                     <h4 class="text-xs text-[#878D92]">STARTS ON</h4>
@@ -226,12 +580,12 @@
                     </div>
                 </div>
                 <div class="masterclass-card px-3 w-full  h-[409px] rounded-md relative ">
-                    <img src="images/masterclass/Event img 4.jpg" alt="Malaysia"
-                        class="rounded-md h-[408px] w-[100%]">
+                    <img src="images/masterclass/Event img 4.jpg" alt="Malaysia" class="rounded-md h-[408px] w-[100%]">
                     <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
                         <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Certificate Programs</h3>
                         <div class="w-full text-start bg-black/10  ">
-                            <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies</h2>
+                            <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies
+                            </h2>
                             <div class="flex justify-start space-x-4 ">
                                 <div>
                                     <h4 class="text-xs text-[#878D92]">STARTS ON</h4>
@@ -253,8 +607,7 @@
                 <div class="w-[90%] hidden sm:flex items-center space-x-4">
 
                     <div class="w-[308px] h-[409px] rounded-md relative ">
-                        <img src="images/masterclass/Event img 1.jpg" alt="India"
-                            class="rounded-md h-[408px] w-[100%]">
+                        <img src="images/masterclass/Event img 1.jpg" alt="India" class="rounded-md h-[408px] w-[100%]">
                         <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
                             <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Fellowship</h3>
                             <div class="w-full text-start bg-black/10  ">
@@ -300,7 +653,8 @@
                         <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
                             <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Certificate Programs</h3>
                             <div class="w-full text-start bg-black/10  ">
-                                <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies</h2>
+                                <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies
+                                </h2>
                                 <div class="flex justify-start space-x-4 ">
                                     <div>
                                         <h4 class="text-xs text-[#878D92]">STARTS ON</h4>
@@ -322,7 +676,8 @@
                             <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Certificate Programs
                             </h3>
                             <div class="w-full text-start bg-black/10  ">
-                                <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies</h2>
+                                <h2 class="font-medium text-lg">Future Entrepreneurs Program by Harvard Student Agencies
+                                </h2>
                                 <div class="flex justify-start space-x-4 ">
                                     <div>
                                         <h4 class="text-xs text-[#878D92]">STARTS ON</h4>
@@ -623,6 +978,7 @@
             </div>
         </div>
     </section>
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-links-container">
             <div class="footer-link-section">
@@ -674,6 +1030,33 @@
         </div>
     </footer>
 
+    <script>
+        // Set Tab 1 as active on page load
+        document.getElementById('tab1').style.display = 'block';
+
+        function openTab(tabIndex) {
+            // Hide all tab contents
+            var tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(function (tabContent) {
+                tabContent.style.display = 'none';
+            });
+
+            // Remove active class from all tabs
+            var tabs = document.querySelectorAll('.tab');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active-tab');
+            });
+
+            // Show the selected tab content
+            var selectedTab = document.getElementById('tab' + tabIndex);
+            if (selectedTab) {
+                selectedTab.style.display = 'block';
+            }
+
+            // Add active class to the selected tab
+            tabs[tabIndex - 1].classList.add('active-tab');
+        }
+    </script>
     <script src="js/offline-programs.js"></script>
     <script src="js/student-achievements.js"></script>
     <script src="js/masterclass.js"></script>
