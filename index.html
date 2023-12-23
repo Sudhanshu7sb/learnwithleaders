@@ -118,6 +118,47 @@
             right: 0;
         }
     </style>
+    <style>
+        .hero-cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .hero-carousel-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .hero-cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <style>
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .logos-slide {
+            animation: 5s slide infinite linear;
+        }
+
+        .logos:hover .logos-slide {
+            animation-play-state: paused;
+        }
+    </style>
     <title>Learn With Leaders</title>
 </head>
 
@@ -134,10 +175,59 @@
         </nav>
     </header>
     <!-- hero -->
-    <section>
+    <section class="relative ">
         <div>
-            <h2></h2>
+            <h2 class="">Ivy League Education Unbounded</h2>
+            <p>Learn with the World's Best Teachers, Mentors & Students</p>
+            <button class="lets-talk-button">Get Started <span style="font-weight: bold;">></span> </button>
+
         </div>
+
+        <div class="hero-cards-container" id="heroCardsContainer">
+
+            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Leadership Competition by th…</h2>
+                    <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center ">
+                <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                    <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- collaboration -->
@@ -145,10 +235,10 @@
         <h2 class="font-semibold text-2xl lg:text-4xl ml-4 lg:ml-12 px-4">Benefit from our collaborations with the
             world's best</h2>
         <p class="xl ml-4 lg:ml-12 my-4 px-4">Democratising Ivy League education for all</p>
-        <div class="" id="collaborationContainer">
-            <div id="collaborationScrollableContainer" class="collaboration-scrollable flex flex-col gap-3">
+        <!-- <div class="" id="collaborationContainer">
+            <div id="collaborationScrollableContainer" class="collaboration-scrollable logos flex flex-col gap-3">
 
-                <div class="flex gap-3">
+                <div class="flex gap-3 logo-slide">
 
                     <div>
                         <img src="images/collaboration/top1.jpg" alt="" class="rounded-lg  h-[90px]">
@@ -169,7 +259,7 @@
                         <img src="images/collaboration/top6.jpg" alt="" class="rounded-lg  h-[90px]">
                     </div>
                 </div>
-                <div class="flex gap-3">
+                <div class="flex gap-3 logo-slide">
 
                     <div>
                         <img src="images/collaboration/bot1.jpg" alt="" class="rounded-lg  h-[90px]">
@@ -192,9 +282,32 @@
                 </div>
 
             </div>
-            <!-- <button id="prevCollaboration" onclick="scroll('prev')">Previous</button>
+            <button id="prevCollaboration" onclick="scroll('prev')">Previous</button>
             <button id="nextCollaboration" onclick="scroll('next')">Next</button> -->
+        <!-- </div> -->
+        <div class="logos">
+            <div class="logos-slide whitespace-nowrap flex gap-3">
+                <img src="images/collaboration/top1.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/top2.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/top3.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/top4.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/top5.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/top6.jpg" alt="" class="rounded-lg  h-[90px]">
+
+                
+            </div>
+            <div class="logos-slide whitespace-nowrap flex gap-3 my-8">
+                <img src="images/collaboration/bot1.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/bot2.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/bot3.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/bot4.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/bot5.jpg" alt="" class="rounded-lg  h-[90px]">
+                <img src="images/collaboration/bot6.jpg" alt="" class="rounded-lg  h-[90px]">
+
+            
+            </div>
         </div>
+
 
 
 
@@ -350,9 +463,9 @@
                         <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">CORPORATE</h2>
                         <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">INTERNSHIP</h2>
                     </div>
-                    <div class="w-[90%] mt-8">
+                    <div class="w-[90%] mt-8 ">
 
-                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 lg:overflow-y-scroll">
+                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
                             <h2 class="text-[1.75rem] font-semibold ">HDFC Capital Advisors: Corporate
                                 Internship Project</h2>
                             <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2 ">
@@ -405,9 +518,9 @@
                         <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">FELLOWSHIPS</h2>
 
                     </div>
-                    <div class="w-[90%] mt-8">
+                    <div class="w-[90%] mt-8 ">
 
-                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 lg:overflow-y-scroll">
+                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
                             <h2 class="text-[1.75rem] font-semibold ">HDFC Capital Advisors: Corporate
                                 Internship Project</h2>
                             <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2 ">
@@ -1380,72 +1493,12 @@
         </div>
     </footer>
 
-    <script>
-        // Set Tab 1 as active on page load
-        document.getElementById('tab1').style.display = 'block';
 
-        function openTab(tabIndex) {
-            // Hide all tab contents
-            var tabContents = document.querySelectorAll('.tab-content');
-            tabContents.forEach(function (tabContent) {
-                tabContent.style.display = 'none';
-            });
-
-            // Remove active class from all tabs
-            var tabs = document.querySelectorAll('.tab');
-            tabs.forEach(function (tab) {
-                tab.classList.remove('active-tab');
-            });
-
-            // Show the selected tab content
-            var selectedTab = document.getElementById('tab' + tabIndex);
-            if (selectedTab) {
-                selectedTab.style.display = 'block';
-            }
-
-            // Add active class to the selected tab
-            tabs[tabIndex - 1].classList.add('active-tab');
-        }
-    </script>
-    <script>
-        const scrollableContainer = document.getElementById('collaborationScrollableContainer');
-        const prevBtn = document.getElementById('prevCollaboration');
-        const nextBtn = document.getElementById('nextCollaboration');
-
-        let scrollPosition = 0;
-
-        function autoScroll() {
-            const containerWidth = document.getElementById('collaborationScrollableContainer').offsetWidth;
-            const totalWidth = scrollableContainer.scrollWidth;
-
-            if (scrollPosition > -totalWidth + containerWidth) {
-                scrollPosition -= containerWidth;
-            } else {
-                scrollPosition = 0;
-            }
-
-            scrollableContainer.style.transform = `translateX(${scrollPosition}px)`;
-        }
-
-        function scroll(direction) {
-            const containerWidth = document.getElementById('collaborationScrollableContainer').offsetWidth;
-            const totalWidth = scrollableContainer.scrollWidth;
-
-            if (direction === 'next' && scrollPosition > -totalWidth + containerWidth) {
-                scrollPosition -= containerWidth;
-            } else if (direction === 'prev' && scrollPosition !== 0) {
-                scrollPosition += containerWidth;
-            }
-
-            scrollableContainer.style.transform = `translateX(${scrollPosition}px)`;
-        }
-
-        // Auto-scroll every 2 seconds
-        setInterval(autoScroll, 2000);
-    </script>
     <script src="js/offline-programs.js"></script>
     <script src="js/student-achievements.js"></script>
     <script src="js/masterclass.js"></script>
+    <script src="js/hero.js"></script>
+    <!-- <script src="js/collaboration.js"></script> -->
 
 </body>
 

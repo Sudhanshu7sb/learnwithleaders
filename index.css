@@ -167,7 +167,22 @@ body {
 }
 
 
+/* scroll bar */
+html::-webkit-scrollbar {
+    width: 10px; 
+ }
 
+html::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #df9f16;
+  border-radius: 25px;
+}
+
+
+  /* header */
 .header {
     background-color: #121212;
     width: 100%;
@@ -235,7 +250,19 @@ body {
   }
 
 
+/* collaboration */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 3px; 
+ }
 
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #df9f16;
+  border-radius: 25px;
+}
 
 
 /* footer section */
