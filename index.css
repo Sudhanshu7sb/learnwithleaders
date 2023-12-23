@@ -137,7 +137,10 @@ table {
 
 
 /* css reset ends */
-
+@font-face {
+    font-family: Inter;
+    src: url(/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 * {
     margin: 0;

@@ -59,18 +59,63 @@
 
         /* .tab-card {
             /* border: 1px solid #ddd; */
-            /* border-radius: 8px; */
-            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-            /* margin: 10px; */
-            /* padding: 20px; */
-            /* width: 200px; */
-            /* text-align: center; */
-            /* background-color: white; */
-        /* } */ 
+        /* border-radius: 8px; */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        /* margin: 10px; */
+        /* padding: 20px; */
+        /* width: 200px; */
+        /* text-align: center; */
+        /* background-color: white; */
+        /* } */
 
         .active-tab {
             color: #df9f16;
             border-bottom: 1px solid #df9f16;
+        }
+    </style>
+    <style>
+        #collaborationScrollableContainer {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scrollable {
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+
+        .scrollable div {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        #prevCollaboration,
+        #nextCollaboration {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #prevCollaboration {
+            left: 0;
+        }
+
+        #nextCollaboration {
+            right: 0;
         }
     </style>
     <title>Learn With Leaders</title>
@@ -88,9 +133,309 @@
             <button class="lets-talk-button">Let's Talk <span style="font-weight: bold;">></span> </button>
         </nav>
     </header>
+    <!-- hero -->
+    <section>
+        <div>
+            <h2></h2>
+        </div>
+    </section>
+
+    <!-- collaboration -->
+    <section class="bg-[#121212]">
+        <h2 class="font-semibold text-2xl lg:text-4xl ml-4 lg:ml-12 px-4">Benefit from our collaborations with the
+            world's best</h2>
+        <p class="xl ml-4 lg:ml-12 my-4 px-4">Democratising Ivy League education for all</p>
+        <div class="" id="collaborationContainer">
+            <div id="collaborationScrollableContainer" class="collaboration-scrollable flex flex-col gap-3">
+
+                <div class="flex gap-3">
+
+                    <div>
+                        <img src="images/collaboration/top1.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/top2.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/top3.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/top4.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/top5.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/top6.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                </div>
+                <div class="flex gap-3">
+
+                    <div>
+                        <img src="images/collaboration/bot1.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/bot2.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/bot3.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/bot4.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/bot5.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                    <div>
+                        <img src="images/collaboration/bot6.jpg" alt="" class="rounded-lg  h-[90px]">
+                    </div>
+                </div>
+
+            </div>
+            <!-- <button id="prevCollaboration" onclick="scroll('prev')">Previous</button>
+            <button id="nextCollaboration" onclick="scroll('next')">Next</button> -->
+        </div>
+
+
+
+    </section>
+
+    <!-- certificates -->
+    <section class="flex flex-col w-full justify-center items-center">
+        <div class=" bg-[#121212]  w-full flex flex-col lg:flex-row justify-evenly ">
+            <div class="w-full px-4  lg:w-[20%] my-8">
+                <h2 class="font-semibold text-[1.625rem]">Certificates</h2>
+                <p class="text-lg font-normal my-4 text-[#878D8B]">Experience global learning, participate in projects
+                    and build networks globally.</p>
+                <h3 class="text-[#F1B537] font-thin">EXPLORE ALL <i class="fa-solid fa-arrow-right-long "></i></h3>
+            </div>
+            <div>
+                <h2 class="text-[#B3892F] text-center text-[5vw]  font-black tracking-[0.625rem] my-8 ">CERTIFICATES
+                </h2>
+            </div>
+        </div>
+        <div
+            class="w-full lg:w-[70%] lg:self-end flex flex-col items-center space-y-4 lg:space-y-0  lg:pr-8 lg:mt-[-10%] lg:flex-row flex-wrap gap-3  mb-[5rem]">
+            <div class="relative w-[90%] lg:w-[30%]  flex justify-center items-center">
+                <img src="images/certificates/Img1.jpg" alt="" class="rounded-lg w-full h-[23rem]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Leadership Competition by th…</h2>
+                    <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] lg:w-[30%]  flex justify-center items-center ">
+                <img src="images/certificates/Img2.jpg" alt="" class="rounded-lg w-full h-[23rem]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                    <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] lg:w-[30%]  flex justify-center items-center">
+                <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full h-[23rem]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] lg:w-[30%]  flex justify-center items-center">
+                <img src="images/certificates/Img4.jpg" alt="" class="rounded-lg w-full h-[23rem]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Leadership Competition by th…</h2>
+                    <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] lg:w-[30%]  flex justify-center items-center ">
+                <img src="images/certificates/Img5.jpg" alt="" class="rounded-lg w-full h-[23rem]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                    <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] lg:w-[30%]  flex justify-center items-center">
+                <img src="images/certificates/Img6.jpg" alt="" class="rounded-lg w-full h-[23rem]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- competitions -->
+    <section class="flex flex-col w-full justify-center items-center">
+        <div class=" bg-[#121212]  w-full flex flex-col lg:flex-row justify-evenly ">
+            <div class="w-full px-4  lg:w-[20%] my-8">
+                <h2 class="font-semibold text-[1.625rem]">Competitions</h2>
+                <p class="text-lg font-normal my-4 text-[#878D8B]">Learn and compete with a
+                    global peer group. Win at a
+                    global stage.</p>
+                <h3 class="text-[#F1B537] font-thin">EXPLORE ALL <i class="fa-solid fa-arrow-right-long "></i></h3>
+            </div>
+            <div>
+                <h2 class="text-[#B3892F] text-center text-[5vw]  font-black tracking-[0.625rem] my-8 ">COMPETITIONS
+                </h2>
+            </div>
+        </div>
+        <div
+            class="w-full lg:w-[70%] lg:self-end flex flex-col items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:pr-8 lg:mt-[-10%] lg:flex-row mb-[5rem]">
+            <div class="relative w-[90%] flex justify-center items-center">
+                <img src="images/competitions/Img1.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Leadership Competition by th…</h2>
+                    <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] flex justify-center items-center ">
+                <img src="images/competitions/Img2.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                    <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+            <div class="relative w-[90%] flex justify-center items-center">
+                <img src="images/competitions/Img3.jpg" alt="" class="rounded-lg w-full">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- corporate internship -->
+    <section class="bg-[#121212] flex flex-col sm:flex-row justify-center items-center w-full">
+        <div class="w-[90%] flex flex-col">
+            <div class="lg:hidden self-end">
+                <h2 class="text-2xl text-[#df9f16]">CORPORATE</h2>
+                <h2 class="text-2xl text-[#df9f16]">INTERNSHIP</h2>
+            </div>
+            <div class="self-end">
+                <button id="prev"> <i class="fa-solid fa-arrow-left-long text-[#df9f16] text-4xl"></i></button>
+                <button id="next"><i class="fa-solid fa-arrow-right-long text-[#df9f16] text-4xl ml-4"></i></button>
+            </div>
+            <div class="flex flex-col lg:flex-row relative ">
+
+                <img src="images/corporate-internship/corporate.jpg" alt="">
+                <div class="relative  lg:absolute lg:self-end lg:right-0 w-full lg:w-[50%]">
+
+                    <div class="hidden lg:block">
+                        <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">CORPORATE</h2>
+                        <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">INTERNSHIP</h2>
+                    </div>
+                    <div class="w-[90%] mt-8">
+
+                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 lg:overflow-y-scroll">
+                            <h2 class="text-[1.75rem] font-semibold ">HDFC Capital Advisors: Corporate
+                                Internship Project</h2>
+                            <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2 ">
+
+                                <div>
+                                    <h2>Application Deadline</h2>
+                                    <p>13 Decemeber, 2023</p>
+                                </div>
+                                <div>
+                                    <h2>Application Deadline</h2>
+                                    <p>13 Decemeber, 2023</p>
+                                </div>
+                            </div>
+                            <p class=" text-[#9b9b9b] text-lg my-4">In collaboration with Harvard Entrepreneurship
+                                Collective and Learn with Leaders. Embark on an 8-
+                                week Experiential Learning Project Tackling a Fortune
+                                500 real-world business problem, guided by a Harvard
+                                undergraduate mentor to craft live solutions that
+                                address the impact of Green Finance for residential</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!--fellowships  -->
+    <section class="my-12 bg-[#121212] flex flex-col sm:flex-row justify-center items-center w-full">
+        <div class="w-[90%] flex flex-col">
+            <div class="lg:hidden self-end">
+                <h2 class="text-2xl text-[#df9f16]">FELLOWSHIPS</h2>
 
+            </div>
+            <!-- <div class="mt-4">
+                <button id="prev"> <i class="fa-solid fa-arrow-left-long text-[#df9f16] text-4xl"></i></button>
+                <button id="next"><i class="fa-solid fa-arrow-right-long text-[#df9f16] text-4xl ml-4"></i></button>
+            </div> -->
+            <div class="flex flex-col lg:flex-row relative lg:justify-end">
+
+                <div class="relative  lg:absolute lg:self-end lg:left-0 w-full lg:w-[50%]">
+                    <div class="mt-4">
+                        <button id="prev"> <i class="fa-solid fa-arrow-left-long text-[#df9f16] text-4xl"></i></button>
+                        <button id="next"><i
+                                class="fa-solid fa-arrow-right-long text-[#df9f16] text-4xl ml-4"></i></button>
+                    </div>
+                    <div class="hidden lg:block">
+
+                        <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">FELLOWSHIPS</h2>
+
+                    </div>
+                    <div class="w-[90%] mt-8">
+
+                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 lg:overflow-y-scroll">
+                            <h2 class="text-[1.75rem] font-semibold ">HDFC Capital Advisors: Corporate
+                                Internship Project</h2>
+                            <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2 ">
+
+                                <div>
+                                    <h2>Application Deadline</h2>
+                                    <p>13 Decemeber, 2023</p>
+                                </div>
+                                <div>
+                                    <h2>Application Deadline</h2>
+                                    <p>13 Decemeber, 2023</p>
+                                </div>
+                            </div>
+                            <p class=" text-[#9b9b9b] text-lg my-4">In collaboration with Harvard Entrepreneurship
+                                Collective and Learn with Leaders. Embark on an 8-
+                                week Experiential Learning Project Tackling a Fortune
+                                500 real-world business problem, guided by a Harvard
+                                undergraduate mentor to craft live solutions that
+                                address the impact of Green Finance for residential</p>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="images/corporate-internship/corporate.jpg" alt="" class="w-full lg:w-[70%]">
+
+            </div>
+        </div>
+    </section>
 
     <!-- gallery section -->
 
@@ -114,8 +459,7 @@
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-08-09-at-12.58.53-PM-5.jpeg">
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-08-09-at-12.58.53-PM-5.jpeg"
-                            alt="Indonesia| Binus School Simprug"
-                            class="h-[309px]">
+                            alt="Indonesia| Binus School Simprug" class="h-[309px]">
                     </a>
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-08-09-at-12.58.53-PM-5.jpeg">
@@ -163,8 +507,7 @@
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Snapinsta.app_361634846_18272556274148369_7107897547663447606_n_1080.jpg">
 
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Snapinsta.app_361634846_18272556274148369_7107897547663447606_n_1080.jpg"
-                            alt="Germany| St George British International School"
-                            class="h-[309px]">
+                            alt="Germany| St George British International School" class="h-[309px]">
                     </a>
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Snapinsta.app_361634846_18272556274148369_7107897547663447606_n_1080.jpg">
@@ -182,8 +525,7 @@
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-06-19-at-12.00.52-PM.jpeg">
 
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-06-19-at-12.00.52-PM.jpeg"
-                            alt="Turkey| MEF International School"
-                            class=" h-[309px]">
+                            alt="Turkey| MEF International School" class=" h-[309px]">
                     </a>
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2023-06-19-at-12.00.52-PM.jpeg">
@@ -200,8 +542,7 @@
                     <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/2.jpg">
 
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/2.jpg"
-                            alt="Brazil| Escola Bilíngue Pueri Domus School"
-                            class="h-[309px]">
+                            alt="Brazil| Escola Bilíngue Pueri Domus School" class="h-[309px]">
                     </a>
                     <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/2.jpg">
 
@@ -218,7 +559,8 @@
         <div class="tab-content w-[90%]" id="tab2">
             <div class="cards">
                 <!-- Placeholder cards for Tab 2 -->
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Taarush-conducts-Creative-Learning-Programs-for-Primary-School-Students.jpeg">
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Taarush-conducts-Creative-Learning-Programs-for-Primary-School-Students.jpeg"
@@ -234,7 +576,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Ruhaan-creating-Eco-Friendly-Bags.png">
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/Ruhaan-creating-Eco-Friendly-Bags.png"
@@ -249,7 +592,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Gulsum-teaches-English-at-a-Rural-Camp-at-Azerbaijan.jpg">
 
@@ -266,7 +610,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative my-8">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative my-8">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Akshada-trains-students-and-plants-trees-as-part-of-the-Sustainable-Spaces-program-in-Schools-at-Dubai-1-scaled.jpg">
 
@@ -334,7 +679,8 @@
         <div class="tab-content w-[90%]" id="tab4">
             <div class="cards">
                 <!-- Placeholder cards for Tab 4 -->
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] m-4 border-[1px] border-[#2c2b2b] border-solid relative">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/314819535_638042417991007_5549113571662691431_n-1.jpg">
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/314819535_638042417991007_5549113571662691431_n-1.jpg"
@@ -350,7 +696,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
                     <a href="https://learnwithleaders.com/wp-content/uploads/2022/12/At-the-MUN-Conference-scaled.jpg">
                         <img src="https://learnwithleaders.com/wp-content/uploads/2022/12/At-the-MUN-Conference-scaled.jpg"
                             alt="Debating" class="w-full h-[309px]">
@@ -363,7 +710,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/Explaining-the-Rules-of-the-Competition-scaled.jpg">
 
@@ -380,7 +728,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
+                <div
+                    class="tab-card w-[420px] h-[309px] lg:w-[30%] border-[1px] border-[#2c2b2b] border-solid relative">
                     <a
                         href="https://learnwithleaders.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-20-at-5.47.58-PM.jpeg">
 
@@ -707,7 +1056,7 @@
     <!-- students achievements -->
     <section class="bg-[#121212] py-4">
         <div class=" w-full flex justify-center items-center">
-            <div class="flex flex-col justify-evenly w-[90%] pb-2">
+            <div class="flex flex-col justify-evenly w-[90%] pb-2 ">
 
                 <h2 class="text-4xl font-semibold">Student Achievements</h2>
                 <div class="self-end ">
@@ -724,9 +1073,10 @@
                 <div class="student-card px-3 w-full h-[409px] rounded-md relative ">
                     <img src="images/student-achievements/Event img 1.jpg" alt="India"
                         class="rounded-md h-[408px] w-[100%]">
-                    <div class="absolute bottom-0 p-2 h-full w-full flex flex-col  justify-between items-start  ">
+                    <div class="absolute bottom-0  h-full w-full flex flex-col  justify-between items-start  ">
                         <h3 class="bg-[#df9f16] font-medium text-black px-2 py-1">Entrepreneurship Program</h3>
-                        <div class="w-full text-start bg-black/10  ">
+                        <div class="w-full text-start   "
+                            style="background:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,1))">
                             <h2 class="font-medium text-lg">India Dance Class Through AI</h2>
                             <div class="flex justify-start space-x-4 ">
                                 <div>
@@ -1056,6 +1406,42 @@
             // Add active class to the selected tab
             tabs[tabIndex - 1].classList.add('active-tab');
         }
+    </script>
+    <script>
+        const scrollableContainer = document.getElementById('collaborationScrollableContainer');
+        const prevBtn = document.getElementById('prevCollaboration');
+        const nextBtn = document.getElementById('nextCollaboration');
+
+        let scrollPosition = 0;
+
+        function autoScroll() {
+            const containerWidth = document.getElementById('collaborationScrollableContainer').offsetWidth;
+            const totalWidth = scrollableContainer.scrollWidth;
+
+            if (scrollPosition > -totalWidth + containerWidth) {
+                scrollPosition -= containerWidth;
+            } else {
+                scrollPosition = 0;
+            }
+
+            scrollableContainer.style.transform = `translateX(${scrollPosition}px)`;
+        }
+
+        function scroll(direction) {
+            const containerWidth = document.getElementById('collaborationScrollableContainer').offsetWidth;
+            const totalWidth = scrollableContainer.scrollWidth;
+
+            if (direction === 'next' && scrollPosition > -totalWidth + containerWidth) {
+                scrollPosition -= containerWidth;
+            } else if (direction === 'prev' && scrollPosition !== 0) {
+                scrollPosition += containerWidth;
+            }
+
+            scrollableContainer.style.transform = `translateX(${scrollPosition}px)`;
+        }
+
+        // Auto-scroll every 2 seconds
+        setInterval(autoScroll, 2000);
     </script>
     <script src="js/offline-programs.js"></script>
     <script src="js/student-achievements.js"></script>
