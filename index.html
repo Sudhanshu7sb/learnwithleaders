@@ -9,7 +9,9 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -141,22 +143,180 @@
     </style>
 
     <style>
-        @keyframes slide {
+        .slider {
+            height: 300px;
+            overflow: hidden;
+            width: 130%;
+
+        }
+
+        .slider .slide-track {
+            animation: scroll 20s linear infinite;
+            display: flex;
+            width: calc(200px*6);
+
+        }
+
+        .slider .slide {
+            height: 100px;
+            width: 250px;
+        }
+
+        @keyframes scroll {
             from {
                 transform: translateX(0);
             }
 
             to {
-                transform: translateX(-100%);
+                transform: translateX(calc(-250px*7));
             }
         }
 
-        .logos-slide {
-            animation: 5s slide infinite linear;
+
+
+        .slider:hover .slide {
+            animation-play-state: paused;
+        }
+    </style>
+    <style>
+        #carousel-container {
+            display: flex;
+            overflow: hidden;
+            width: 90vw;
+            max-width: 600px;
+            height: 200px;
         }
 
-        .logos:hover .logos-slide {
-            animation-play-state: paused;
+        #carousel {
+            display: flex;
+            width: 300%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card {
+            flex: 0 0 30%;
+            /* Adjust card width as needed */
+            margin: 0 1%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <style>
+        /* collboration */
+        .swiper {
+            width: 100%;
+            height: 15vh;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            /* width:160px; */
+            line-height: 90px;
+            border-radius: 20px;
+        }
+
+        .swiper-slide img {
+            display: inline-block;
+            width: 100%;
+            height: 90px;
+
+
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+        .swiper-button-next {
+            color: #4a4a4a;
+            width: 20px;
+            height: 20px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            /* color:#4a4a4a; */
+            width: 40px;
+            height: 40px;
+            /* margin-top: -30%; */
+
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            color: black;
+            background-color: #4a4a4a;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: -30%; */
+
+
+        }
+
+        .mySwiper2 {
+            margin-top: 15px;
+            height: 20vh;
+        }
+    </style>
+    <style>
+        .swiper3 {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .swiper-slide {
+
+
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 550px;
+            width: 332.2px;
+            line-height: 90px;
+
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+
+
+        }
+
+        .swiper-slide .hero-carousel-item {
+            width: 100%;
+            height: 550px;
+            border: 0;
+        }
+
+
+
+        .mySwiper3 {
+            margin-top: 15px;
+            height: 100vh;
         }
     </style>
     <title>Learn With Leaders</title>
@@ -176,54 +336,115 @@
     </header>
     <!-- hero -->
     <section class="relative ">
-        <div>
-            <h2 class="">Ivy League Education Unbounded</h2>
-            <p>Learn with the World's Best Teachers, Mentors & Students</p>
-            <button class="lets-talk-button">Get Started <span style="font-weight: bold;">></span> </button>
+        <div class="hero-heading relative lg:absolute left-0 top-[1rem] flex flex-col justify-center items-start z-10 w-[70%] h-[70vh]">
+            <h2 class="text-6xl font-extrabold">Ivy League Education Unbounded</h2>
+            <p class="text-xl text-[#878D92]">Learn with the World's Best Teachers, Mentors & Students</p>
+            <button class="lets-talk-button self-start">Get Started <span style="font-weight: bold;">></span> </button>
 
         </div>
 
-        <div class="hero-cards-container" id="heroCardsContainer">
+        <div class="hero-cards-container " id="heroCardsContainer" >
+            <div class="swiper3 mySwiper3 mySwiperHero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[100%] h-[100vh] flex justify-center items-center">
+                            <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The Leadership Competition by th…</h2>
+                                <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center ">
+                            <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                                <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                            <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                                <p class="text-sm">Kick start your sustainability journey with…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                            <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                                <p class="text-sm">Kick start your sustainability journey with…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
-                <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full">
-                <div class="absolute bottom-0">
-                    <h2 class="font-medium">The Leadership Competition by th…</h2>
-                    <p class="text-sm">Learn leadership skills from Harvard stud…</p>
-                    <p class="text-[#df9f16]">
-                        <i class="fa-solid fa-arrow-right-long "></i>
-                    </p>
-                </div>
-            </div>
-            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center ">
-                <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full">
-                <div class="absolute bottom-0">
-                    <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
-                    <p class="text-sm">Harvard Student Agencies presents - Th…</p>
-                    <p class="text-[#df9f16]">
-                        <i class="fa-solid fa-arrow-right-long "></i>
-                    </p>
-                </div>
-            </div>
-            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
-                <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full">
-                <div class="absolute bottom-0">
-                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
-                    <p class="text-sm">Kick start your sustainability journey with…</p>
-                    <p class="text-[#df9f16]">
-                        <i class="fa-solid fa-arrow-right-long "></i>
-                    </p>
-                </div>
-            </div>
 
-            <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
-                <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full">
-                <div class="absolute bottom-0">
-                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
-                    <p class="text-sm">Kick start your sustainability journey with…</p>
-                    <p class="text-[#df9f16]">
-                        <i class="fa-solid fa-arrow-right-long "></i>
-                    </p>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                            <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full h-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The Leadership Competition by th…</h2>
+                                <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center ">
+                            <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full h-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                                <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                            <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full h-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                                <p class="text-sm">Kick start your sustainability journey with…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
+                            <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full h-full">
+                            <div class="absolute bottom-0">
+                                <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                                <p class="text-sm">Kick start your sustainability journey with…</p>
+                                <p class="text-[#df9f16]">
+                                    <i class="fa-solid fa-arrow-right-long "></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -231,82 +452,70 @@
     </section>
 
     <!-- collaboration -->
-    <section class="bg-[#121212]">
+    <section class="bg-[#121212] py-12">
         <h2 class="font-semibold text-2xl lg:text-4xl ml-4 lg:ml-12 px-4">Benefit from our collaborations with the
             world's best</h2>
         <p class="xl ml-4 lg:ml-12 my-4 px-4">Democratising Ivy League education for all</p>
-        <!-- <div class="" id="collaborationContainer">
-            <div id="collaborationScrollableContainer" class="collaboration-scrollable logos flex flex-col gap-3">
-
-                <div class="flex gap-3 logo-slide">
-
-                    <div>
-                        <img src="images/collaboration/top1.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/top2.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/top3.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/top4.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/top5.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/top6.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                </div>
-                <div class="flex gap-3 logo-slide">
-
-                    <div>
-                        <img src="images/collaboration/bot1.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/bot2.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/bot3.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/bot4.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/bot5.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                    <div>
-                        <img src="images/collaboration/bot6.jpg" alt="" class="rounded-lg  h-[90px]">
-                    </div>
-                </div>
-
-            </div>
-            <button id="prevCollaboration" onclick="scroll('prev')">Previous</button>
-            <button id="nextCollaboration" onclick="scroll('next')">Next</button> -->
-        <!-- </div> -->
-        <div class="logos">
-            <div class="logos-slide whitespace-nowrap flex gap-3">
-                <img src="images/collaboration/top1.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/top2.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/top3.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/top4.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/top5.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/top6.jpg" alt="" class="rounded-lg  h-[90px]">
-
-                
-            </div>
-            <div class="logos-slide whitespace-nowrap flex gap-3 my-8">
-                <img src="images/collaboration/bot1.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/bot2.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/bot3.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/bot4.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/bot5.jpg" alt="" class="rounded-lg  h-[90px]">
-                <img src="images/collaboration/bot6.jpg" alt="" class="rounded-lg  h-[90px]">
-
-            
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" class="w-[160px]"> <img src="images/collaboration/top1.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top2.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top3.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top4.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top5.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top6.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top1.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top2.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top3.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top4.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top5.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/top6.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
             </div>
         </div>
+        <div class="swiper swiper2 mySwiper mySwiper2">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" class="rounded-lg"> <img src="images/collaboration/bot1.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot2.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot3.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot4.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot5.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot6.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot1.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot2.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot3.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot4.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot5.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+                <div class="swiper-slide"> <img src="images/collaboration/bot6.jpg" alt=""
+                        class="slide rounded-lg  h-[90px]"></div>
+            </div>
+
+        </div>
+
 
 
 
@@ -314,8 +523,8 @@
     </section>
 
     <!-- certificates -->
-    <section class="flex flex-col w-full justify-center items-center">
-        <div class=" bg-[#121212]  w-full flex flex-col lg:flex-row justify-evenly ">
+    <section class="  flex flex-col w-full justify-center items-center">
+        <div class=" bg-[#202020]  w-full flex flex-col lg:flex-row justify-evenly ">
             <div class="w-full px-4  lg:w-[20%] my-8">
                 <h2 class="font-semibold text-[1.625rem]">Certificates</h2>
                 <p class="text-lg font-normal my-4 text-[#878D8B]">Experience global learning, participate in projects
@@ -394,7 +603,7 @@
     </section>
 
     <!-- competitions -->
-    <section class="flex flex-col w-full justify-center items-center">
+    <section class="bg-[#202020] flex flex-col w-full justify-center items-center">
         <div class=" bg-[#121212]  w-full flex flex-col lg:flex-row justify-evenly ">
             <div class="w-full px-4  lg:w-[20%] my-8">
                 <h2 class="font-semibold text-[1.625rem]">Competitions</h2>
@@ -465,7 +674,8 @@
                     </div>
                     <div class="w-[90%] mt-8 ">
 
-                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
+                        <div
+                            class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
                             <h2 class="text-[1.75rem] font-semibold ">HDFC Capital Advisors: Corporate
                                 Internship Project</h2>
                             <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2 ">
@@ -520,7 +730,8 @@
                     </div>
                     <div class="w-[90%] mt-8 ">
 
-                        <div class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
+                        <div
+                            class="bg-[#292929] w-full  lg:w-[100%]  lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
                             <h2 class="text-[1.75rem] font-semibold ">HDFC Capital Advisors: Corporate
                                 Internship Project</h2>
                             <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2 ">
@@ -1374,14 +1585,13 @@
     <section class="stats w-full bg-[#131313]">
         <div class="flex justify-center items-center w-full">
 
-            <div class="stats-container py-8 bg-[#202020] w-[90%] flex justify-center items-center">
-                <div class="stats-numbers flex flex-col justify-center items-center ">
+            <div class="stats-container py-8  w-[100%] flex justify-center items-center">
+                <div class="w-[90%] bg-[#202020] stats-numbers flex flex-col justify-center items-center ">
                     <h3 class=" text-7xl font-bold text-center">Be a part of 15,000+ changemakers now!</h3>
                     <p class="text-sm text-[#878575] my-4 text-center">The potential to learn for a middle and high
                         school student is
                         limitless</p>
-                    <div
-                        class="w-full flex flex-col lg:flex-row flex-wrap justify-evenly items-centerspace-x-8 space-y-8">
+                    <div class="w-full flex flex-col lg:flex-row flex-wrap gap-5 justify-evenly items-center">
                         <div class="flex justify-center">
                             <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/carbon_group-presentation.svg"
                                 alt="">
@@ -1400,8 +1610,7 @@
                             <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/ep_school.svg" alt="">
                         </div>
                     </div>
-                    <div
-                        class="w-full flex flex-col lg:flex-row flex-wrap justify-evenly items-center space-x-8 space-y-8 mt-8">
+                    <div class="w-full flex flex-col lg:flex-row flex-wrap gap-5 justify-evenly items-center  mt-8">
                         <div>
                             <p class="text-5xl font-bold text-[#df9f16]">40+ </p>
                             <p class="text-2xl text-[#878575] font-bold">Programs</p>
@@ -1426,16 +1635,18 @@
             </div>
         </div>
         <div class="w-full h-[40vh] bg-[#121212] flex flex-col justify-center items-center space-y-2 py-8">
-            <h2 class="sm:text-2xl text-4xl font-bold text-center">Students and alumni love our programs</h2>
+            <h2 class="sm:text-2xl lg:text-[2.625rem] font-semibold text-center">Students and alumni love our programs
+            </h2>
             <p class="text-[#878575] text-center">What people are saying about us</p>
         </div>
         <hr class="text-[#878575]">
         <div
             class="w-full h-[40vh]  flex flex-col  sm:flex-row   justify-center items-center space-x-4 space-y-4 bg-[#121212] my-4">
-            <p for="text" class="text-2xl font-thin mr-6 sm:mx-4 mt-2">JOIN THE CHANGEMAKERS</p>
+            <p class="text-2xl text-[#707179] font-thin mr-6 sm:mx-4 mt-2">JOIN THE CHANGEMAKERS</p>
             <div>
 
-                <input type="text" placeholder="Enter your Email-Id" class="outline-none bg-transparent rounded-sm">
+                <input type="text" placeholder="Enter your Email-Id"
+                    class="outline-none bg-transparent rounded-sm border-[#4A4A4A]">
                 <button
                     class="border-[1px] border-[#df9f16] text-[#df9f16] px-8 py-2 my-2 rounded-sm sm:m-4 ">Submit</button>
             </div>
@@ -1492,13 +1703,39 @@
                 programs.</p>
         </div>
     </footer>
+    <script>
+        //     const carousel = document.getElementById('carousel');
+        // const cards = document.querySelectorAll('.card');
+        // const cardCount = cards.length;
+        // let currentIndex = 0;
 
+        // function updateCarousel() {
+        //   const angle = -currentIndex * (360 / cardCount);
+        //   carousel.style.transform = `rotateY(${angle}deg)`;
+        // }
 
+        // function nextCard() {
+        //   currentIndex = (currentIndex + 1) % cardCount;
+        //   updateCarousel();
+        // }
+
+        // function prevCard() {
+        //   currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+        //   updateCarousel();
+        // }
+
+        // setInterval(nextCard, 2000); // Adjust the interval as needed
+
+        // updateCarousel();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/gallery-tab.js">   </script>
     <script src="js/offline-programs.js"></script>
     <script src="js/student-achievements.js"></script>
     <script src="js/masterclass.js"></script>
     <script src="js/hero.js"></script>
-    <!-- <script src="js/collaboration.js"></script> -->
+
+    <script src="js/collaboration.js"></script>
 
 </body>
 

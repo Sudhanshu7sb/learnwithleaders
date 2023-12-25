@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (touchEndX < touchStartX - swipeThreshold) {
             stopAutoScroll();
             nextCard();
-            //   startAutoScroll();
+              startAutoScroll();
         } else if (touchEndX > touchStartX + swipeThreshold) {
             stopAutoScroll();
             prevCard();
-            //   startAutoScroll();
+              startAutoScroll();
         }
     }
 

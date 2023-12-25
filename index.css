@@ -203,6 +203,11 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5px;
 }
 
+.hero-heading{
+    background: linear-gradient(to right,#121212,#121212,transparent);
+    padding-left:30px;
+}
+
 .lets-talk-button {
     background-color: #df9f16;
     border-radius: 5px;
