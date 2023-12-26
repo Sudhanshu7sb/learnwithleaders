@@ -166,6 +166,11 @@ body {
 
 }
 
+.cards-bg {
+    background: linear-gradient(180deg, transparent, black, black, black, black, black, black, black);
+    padding: 20px;
+}
+
 
 /* scroll bar */
 html::-webkit-scrollbar {
@@ -196,9 +201,11 @@ html::-webkit-scrollbar-thumb {
 .hamburger-menu {
     display: none;
 }
-.menu-icon:hover{
+
+.menu-icon:hover {
     transform: rotate(180deg);
 }
+
 @media only screen and (max-width:1023px) {
     .hamburger-menu {
         display: block;
@@ -223,7 +230,7 @@ html::-webkit-scrollbar-thumb {
     background: #121212;
     visibility: hidden;
     opacity: 0;
-    margin-top:1rem;
+    margin-top: 1rem;
 }
 
 .dropdown-content {
@@ -241,13 +248,14 @@ header ul li:hover .dropdown {
     /* top:0; */
 }
 
-.showOffering{
-    visibility:hidden;
-}
-.second-dropdown-content{
+.showOffering {
     visibility: hidden;
-    width:100%;
-    display:flex;
+}
+
+.second-dropdown-content {
+    visibility: hidden;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -292,10 +300,12 @@ header ul li:hover .dropdown {
         line-height: 2.8rem;
     }
 }
-.searchbox input:focus{
-    outline:none;
-    border:0;
+
+.searchbox input:focus {
+    outline: none;
+    border: 0;
 }
+
 .lets-talk-button {
     background-color: #df9f16;
     border-radius: 5px;
