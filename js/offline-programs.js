@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const cardsContainer = document.getElementById('cardsContainer');
-    const cards = document.querySelectorAll('.card');
+    const cardsContainer = document.getElementById('offlineCardsContainer');
+    const cards = document.querySelectorAll('.offline-card');
     let currentIndex = 0;
     let autoScrollInterval;
     let touchStartX = 0;
@@ -44,24 +44,24 @@ document.addEventListener('DOMContentLoaded', function () {
         if (touchEndX < touchStartX - swipeThreshold) {
             stopAutoScroll();
             nextCard();
-            //   startAutoScroll();
+              startAutoScroll();
         } else if (touchEndX > touchStartX + swipeThreshold) {
             stopAutoScroll();
             prevCard();
-            //   startAutoScroll();
+              startAutoScroll();
         }
     }
 
     cardsContainer.addEventListener('touchstart', handleTouchStart);
     cardsContainer.addEventListener('touchend', handleTouchEnd);
 
-    document.getElementById('prev').addEventListener('click', function () {
+    document.getElementById('prevOfflineBtn').addEventListener('click', function () {
         stopAutoScroll();
         prevCard();
         // startAutoScroll();
     });
 
-    document.getElementById('next').addEventListener('click', function () {
+    document.getElementById('nextOfflineBtn').addEventListener('click', function () {
         stopAutoScroll();
         nextCard();
         // startAutoScroll();
