@@ -298,7 +298,7 @@
         }
 
         .swiper-slide img {
-            display: block;
+
             width: 100%;
             height: 100%;
             border-radius: 30px;
@@ -323,27 +323,139 @@
 </head>
 
 <body>
-    <header class="header">
-        <div>
-            <a href="index.html">
-                <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/logo.png" alt="learnwithleaders">
-            </a>
-            <button class="our-offerings-button">Our Offerings <span>&#8964;</span> </button>
-        </div>
-        <nav>
+    <header class="header relative w-full flex-col sm:flex-row gap-4">
+        <ul class="w-full relative flex items-center justify-start lg:justify-between">
+            <li class="w-[10%] hamburger-menu ">
+                <div class="lg:hidden">
+                    <i class="fa-solid fa-bars text-[#df9f16] text-3xl menu-icon"></i>
+                </div>
+            </li>
+            
+            <li class="w-[50%] lg:w-[20%] pl-[2rem] flex  justify-end ">
+                <a href="index.html">
+                    <img src="https://learnwithleaders.com/wp-content/uploads/2022/04/logo.png" alt="learnwithleaders">
+                </a>
+            </li>
+            <li class="w-[20%] hidden lg:block">
+                
+                    
+                    <button class="hidden lg:block our-offerings-button relative pt-[10px] mb-[5px]">Our Offerings
+                        <span>&#8964;</span>
+                    </button>
+            
+                <div class="dropdown w-[50%] ">
+                    <div class="dropdown-content">
+
+                        <div class="item w-[70%] ">
+                            <h3>Certificate Programs</h3>
+                            <p class="text-[10px] text-[#4A4A4A] my-2 leading-4">Build skills, global networks & success
+                                mindsets.</p>
+                            <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+                        </div>
+                        <div class="item w-[70%]">
+                            <h3>Competitions</h3>
+                            <p class="text-[10px] text-[#4A4A4A] my-2 leading-4">Compete with the best minds in the world.</p>
+                            <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+                        </div>
+                        <div class="item w-[70%]">
+                            <h3>Conferences</h3>
+                            <p class="text-[10px] text-[#4A4A4A] my-2 leading-4">Participate in global social/political phenomena.</p>
+                            <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+                        </div>
+                        <div class="item w-[70%]">
+                            <h3>Internships</h3>
+                            <p class="text-[10px] text-[#4A4A4A] my-2 leading-4">Learn and experience the industry hands-on.</p>
+                            <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+                        </div>
+                        <div class="item w-[70%]">
+                            <h3>Ivy Masterclass</h3>
+                            <p class="text-[10px] text-[#4A4A4A] my-2 leading-4">Explore diverse fields with global peers and Ivy
+                                League mentors</p>
+                            <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+                        </div>
+                        <div class="item w-[70%]">
+                            <h3>Fellowships</h3>
+                            <p class="text-[10px] text-[#4A4A4A] my-2 leading-4">Work on impactful projects as future leaders.</p>
+                            <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+                        </div>
+                    </div>
+                </div>
+                    
+                        
+                    
+                        
+                    
+            </li>
+            <li class="w-[50%] hidden lg:block">
+                <nav class="flex items-center justify-center flex-col sm:flex-row gap-2 lg:gap-10">
+                    <div class=" searchbox border-[1px] border-solid border-[#343434]">
+                        <input type="text" placeholder="Search anything..." class=" focus:ring-transparent bg-transparent border-0 outline-[#343434] w-[80%] focus:ring-offset-0">
+                        <i class="fa-solid fa-magnifying-glass text-[#343434]"></i>
+                    </div>
+                    <button class="lets-talk-button">Let's Talk <span style="font-weight: bold;">></span> </button>
+                </nav>
+            </li>
+        </ul>
+        <nav class="lg:hidden flex items-center justify-center flex-col sm:flex-row gap-2 lg:gap-10">
+            <div class=" searchbox border-[1px] border-solid border-[#343434]">
+                <input type="text" placeholder="Search anything..." class=" focus:ring-transparent bg-transparent border-0 outline-[#343434] w-[80%] focus:ring-offset-0">
+                <i class="fa-solid fa-magnifying-glass text-[#343434]"></i>
+            </div>
             <button class="lets-talk-button">Let's Talk <span style="font-weight: bold;">></span> </button>
         </nav>
+        <div class="showOffering w-[100%] h-[72px] bg-[#434549] absolute left-0 top-[30%] z-20 flex justify-around items-center">
+            <h2>Our Offerings</h2> 
+            <p class="secondMenuDropdown"><i class="fa-solid fa-angle-down"></i></p>
+        </div>
+        <div class="second-dropdown-content absolute top-[70%] h-[200vh] left-0 bg-[#434549] z-30 ">
+
+            <div class="item w-[70%] ">
+                <h3>Certificate Programs</h3>
+                <p class="text-[10px] text-[#786B57] my-2 leading-4">Build skills, global networks & success
+                    mindsets.</p>
+                <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+            </div>
+            <div class="item w-[70%]">
+                <h3>Competitions</h3>
+                <p class="text-[10px] text-[#786B57] my-2 leading-4">Compete with the best minds in the world.</p>
+                <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+            </div>
+            <div class="item w-[70%]">
+                <h3>Conferences</h3>
+                <p class="text-[10px] text-[#786B57] my-2 leading-4">Participate in global social/political phenomena.</p>
+                <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+            </div>
+            <div class="item w-[70%]">
+                <h3>Internships</h3>
+                <p class="text-[10px] text-[#786B57] my-2 leading-4">Learn and experience the industry hands-on.</p>
+                <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+            </div>
+            <div class="item w-[70%]">
+                <h3>Ivy Masterclass</h3>
+                <p class="text-[10px] text-[#786B57] my-2 leading-4">Explore diverse fields with global peers and Ivy
+                    League mentors</p>
+                <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+            </div>
+            <div class="item w-[70%]">
+                <h3>Fellowships</h3>
+                <p class="text-[10px] text-[#786B57] my-2 leading-4">Work on impactful projects as future leaders.</p>
+                <p class="text-[#df9f16]"> <i class="fa-solid fa-arrow-right-long "></i></p>
+            </div>
+        </div>
+      
     </header>
     <!-- hero -->
     <section class="relative ">
-        <div class="hero-heading relative lg:absolute left-0 top-[1rem] flex flex-col justify-center items-start z-10 w-[70%] h-[70vh]">
-            <h2 class="text-6xl font-extrabold">Ivy League Education Unbounded</h2>
+        <div
+            class="hero-heading relative sm:absolute left-0 top-[1rem] flex flex-col justify-center items-start z-10 w-[100%] gap-2 lg:w-[70%] h-[40vh] sm:h-[80vh]">
+            <h2 class=" font-extrabold">Ivy League Education Unbounded</h2>
             <p class="text-xl text-[#878D92]">Learn with the World's Best Teachers, Mentors & Students</p>
             <button class="lets-talk-button self-start">Get Started <span style="font-weight: bold;">></span> </button>
 
         </div>
 
-        <div class="hero-cards-container " id="heroCardsContainer" >
+
+        <div class="hero-cards-container hidden sm:block" id="heroCardsContainer">
             <div class="swiper3 mySwiper3 mySwiperHero">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -396,55 +508,57 @@
                     </div>
 
 
-                    <div class="swiper-slide">
-                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
-                            <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full h-full">
-                            <div class="absolute bottom-0">
-                                <h2 class="font-medium">The Leadership Competition by th…</h2>
-                                <p class="text-sm">Learn leadership skills from Harvard stud…</p>
-                                <p class="text-[#df9f16]">
-                                    <i class="fa-solid fa-arrow-right-long "></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center ">
-                            <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full h-full">
-                            <div class="absolute bottom-0">
-                                <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
-                                <p class="text-sm">Harvard Student Agencies presents - Th…</p>
-                                <p class="text-[#df9f16]">
-                                    <i class="fa-solid fa-arrow-right-long "></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
-                            <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full h-full">
-                            <div class="absolute bottom-0">
-                                <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
-                                <p class="text-sm">Kick start your sustainability journey with…</p>
-                                <p class="text-[#df9f16]">
-                                    <i class="fa-solid fa-arrow-right-long "></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hero-carousel-item relative w-[90%] flex justify-center items-center">
-                            <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full h-full">
-                            <div class="absolute bottom-0">
-                                <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
-                                <p class="text-sm">Kick start your sustainability journey with…</p>
-                                <p class="text-[#df9f16]">
-                                    <i class="fa-solid fa-arrow-right-long "></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
+
+                </div>
+            </div>
+        </div>
+        <div class="hero-cards-container  sm:hidden" id="heroCardsContainer">
+            <!-- Your div cards go here -->
+
+            <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center">
+                <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Leadership Competition by th…</h2>
+                    <p class="text-sm">Learn leadership skills from Harvard stud…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center ">
+                <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The Wolves of Wall Street Compet…</h2>
+                    <p class="text-sm">Harvard Student Agencies presents - Th…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center">
+                <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center">
+                <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <div class="absolute bottom-0">
+                    <h2 class="font-medium">The HUCEG Sustainability Leader…</h2>
+                    <p class="text-sm">Kick start your sustainability journey with…</p>
+                    <p class="text-[#df9f16]">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                    </p>
                 </div>
             </div>
         </div>
@@ -1703,30 +1817,8 @@
                 programs.</p>
         </div>
     </footer>
-    <script>
-        //     const carousel = document.getElementById('carousel');
-        // const cards = document.querySelectorAll('.card');
-        // const cardCount = cards.length;
-        // let currentIndex = 0;
-
-        // function updateCarousel() {
-        //   const angle = -currentIndex * (360 / cardCount);
-        //   carousel.style.transform = `rotateY(${angle}deg)`;
-        // }
-
-        // function nextCard() {
-        //   currentIndex = (currentIndex + 1) % cardCount;
-        //   updateCarousel();
-        // }
-
-        // function prevCard() {
-        //   currentIndex = (currentIndex - 1 + cardCount) % cardCount;
-        //   updateCarousel();
-        // }
-
-        // setInterval(nextCard, 2000); // Adjust the interval as needed
-
-        // updateCarousel();
+    <script src="js/hamburger-menu.js">
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/gallery-tab.js">   </script>
@@ -1734,7 +1826,7 @@
     <script src="js/student-achievements.js"></script>
     <script src="js/masterclass.js"></script>
     <script src="js/hero.js"></script>
-
+    <!-- <script src="js/dropdown.js"></script> -->
     <script src="js/collaboration.js"></script>
 
 </body>
