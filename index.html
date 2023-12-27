@@ -323,7 +323,7 @@
 </head>
 
 <body>
-    <header class="header relative w-full flex-col sm:flex-row gap-4">
+    <header class="header relative w-full h-[100px] flex-col sm:flex-row gap-4">
         <ul class="w-full relative flex items-center justify-start lg:justify-between">
             <li class="w-[10%] hamburger-menu ">
                 <div class="lg:hidden">
@@ -526,7 +526,7 @@
             <!-- Your div cards go here -->
 
             <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center">
-                <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <img src="images/hero/hero1.jpg" alt="" class="rounded-lg w-full h-[555px]">
                 <div class="absolute bottom-0 cards-bg">
                     <h2 class="font-medium leading-loose ">The Leadership Competition by th…</h2>
                     <p class="text-sm">Learn leadership skills from Harvard stud…</p>
@@ -538,7 +538,7 @@
 
 
             <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center ">
-                <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <img src="images/hero/hero2.jpg" alt="" class="rounded-lg w-full h-[555px]">
                 <div class="absolute bottom-0 cards-bg">
                     <h2 class="font-medium leading-loose">The Wolves of Wall Street Compet…</h2>
                     <p class="text-sm">Harvard Student Agencies presents - Th…</p>
@@ -550,7 +550,7 @@
 
 
             <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center">
-                <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <img src="images/hero/hero3.jpg" alt="" class="rounded-lg w-full h-[555px]">
                 <div class="absolute bottom-0 cards-bg">
                     <h2 class="font-medium leading-loose">The HUCEG Sustainability Leader…</h2>
                     <p class="text-sm">Kick start your sustainability journey with…</p>
@@ -561,7 +561,7 @@
             </div>
 
             <div class="hero-card relative w-[100%] h-[80vh] flex justify-center items-center">
-                <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full h-[100%]">
+                <img src="images/certificates/Img3.jpg" alt="" class="rounded-lg w-full h-[555px]">
                 <div class="absolute bottom-0 cards-bg">
                     <h2 class="font-medium leading-loose">The HUCEG Sustainability Leader…</h2>
                     <p class="text-sm">Kick start your sustainability journey with…</p>
@@ -825,6 +825,97 @@
             </div>
         </div>
     </section>
+
+ <!-- conferences -->
+
+<section class="bg-[#121212] flex flex-col sm:flex-row justify-center items-center w-full">
+    <div class="conference-container flex justify-center items-center py-6" id="conferenceContainer">
+        <!-- Conference Cards Carousel -->
+        <div class="w-full sm:w-[90%] flex flex-col overflow-hidden relative">
+            <!-- Carousel Navigation Buttons -->
+            <div class="self-end">
+
+                <button id="prevConference" class="carousel-btn"> <i class="fa-solid fa-arrow-left-long text-[#AE842B] text-4xl"></i></button>
+                <button id="nextConference" class="carousel-btn"><i class="fa-solid fa-arrow-right-long text-[#AE842B] text-4xl ml-4"></i></button>
+            </div>
+
+            <!-- Cards Container -->
+            <div class="flex transition-transform ease-in-out duration-300">
+
+                <!-- First Conference Card -->
+                <div class="w-full flex flex-col justify-center items-center conference-card">
+                    <!-- Shared Conference Title for Small Screens -->
+                    <div class="lg:hidden self-end">
+                        <h2 class="text-2xl font-black text-[#AE842B]">CONFERENCES</h2>
+                    </div>
+                    <!-- Conference Card Content -->
+                    <div class="flex flex-col lg:flex-row relative w-[90%]">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-07-14-at-12.56.57-AM.jpeg" alt="" class="w-full lg:w-[60%]">
+                        <div class="relative lg:absolute lg:self-end lg:right-0 w-full lg:w-[50%] flex  flex-col justify-center items-center">
+                            <!-- Shared Conference Title for Large Screens -->
+                            <div class="hidden lg:block">
+                                <h2 class="sm:text-3xl md:text-5xl lg:text-7xl text-[#df9f16]">CONFERENCES</h2>
+                            </div>
+                            <!-- Conference Details -->
+                            <div class="w-[100%] lg:mt-4 ">
+                                <div class="bg-[#292929] w-full lg:w-[100%] lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
+                                    <h2 class="text-[1.75rem] font-semibold">The International Teen Researchers Conference 2024</h2>
+                                    <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2">
+                                        <div>
+                                            <h2>Application Deadline</h2>
+                                            <p>16 January, 2024</p>
+                                        </div>
+                                        <div>
+                                            <h2>Program Starts</h2>
+                                            <p>21 January, 2024</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-[#9b9b9b] text-lg my-4">Steered by Learn With Leaders, ITRC is a platform for High School Researchers and Ideators. As the global leader in Research studies for High School students, Learn With Leaders has transformed thousands of teenagers into adept published researchers in the Ivy League mold, with Harvard University undergraduates mentoring them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Conference Card -->
+                <div class="w-full flex flex-col justify-center items-center conference-card">
+                    <!-- Shared Conference Title for Small Screens -->
+                    <div class="lg:hidden self-end">
+                        <h2 class="text-2xl text-[#df9f16]">CONFERENCES</h2>
+                    </div>
+                    <!-- Conference Card Content -->
+                    <div class="w-[90%] flex flex-col lg:flex-row relative">
+                        <img src="https://learnwithleaders.com/wp-content/uploads/2023/02/Banner-MUN-HMC.jpg" alt="" class="w-full lg:w-[60%] h-[468px]">
+                        <div class="relative lg:absolute lg:self-end lg:right-0 w-full lg:w-[60%] flex flex-col justify-center items-center">
+                            <!-- Shared Conference Title for Large Screens -->
+                            <div class="hidden lg:block">
+                                <h2 class="sm:text-3xl md:text-5xl lg:text-7xl lg:text-end text-[#df9f16]">CONFERENCES</h2>
+                            </div>
+                            <!-- Conference Details -->
+                            <div class="w-[100%] lg:mt-8 ">
+                                <div class="bg-[#292929] w-full lg:w-[100%] lg:h-[21.25rem] p-4 custom-scrollbar lg:overflow-y-scroll">
+                                    <h2 class="text-[1.75rem] font-semibold">The International Teen Researchers Conference 2024</h2>
+                                    <div class="text-[#9b9b9b] text-lg flex justify-start space-x-8 my-2">
+                                        <div>
+                                            <h2>Application Deadline</h2>
+                                            <p>16 January, 2024</p>
+                                        </div>
+                                        <div>
+                                            <h2>Program Starts</h2>
+                                            <p>21 January, 2024</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-[#9b9b9b] text-lg my-4">Steered by Learn With Leaders, ITRC is a platform for High School Researchers and Ideators. As the global leader in Research studies for High School students, Learn With Leaders has transformed thousands of teenagers into adept published researchers in the Ivy League mold, with Harvard University undergraduates mentoring them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!--fellowships  -->
@@ -1215,7 +1306,7 @@
             <div class="relative offline-card">
                 <!-- Your div cards go here -->
                 <img src=" https://learnwithleaders.com/wp-content/uploads/2022/12/New-Project-4.jpg" alt="India"
-                    class="rounded-md h-[408px] w-[100%]">
+                    class="rounded-md h-[509px] w-[100%]">
                 <div class="absolute cards-bg bottom-0  w-full flex justify-center items-center  ">
                     <div class="w-full text-start">
                         <h2>India</h2>
@@ -1226,7 +1317,7 @@
             </div >
             <div class="relative offline-card">
                 <img src=" https://learnwithleaders.com/wp-content/uploads/2022/12/New-Project-2.jpg" alt="Indonasia"
-                    class="rounded-md h-[408px] w-[100%]">
+                    class="rounded-md h-[509px] w-[100%]">
                 <div class="absolute cards-bg bottom-0   w-full flex justify-center items-center  ">
                     <div class="w-full text-start" style=" box-shadow: 0px -25px 10px 0px rgba(0,0,0,0.75);">
     
@@ -1239,7 +1330,7 @@
         <div class="relative offline-card">
 
             <img src=" https://learnwithleaders.com/wp-content/uploads/2023/04/landmarks-of-malaysia.jpg" alt="Malaysia"
-                class="rounded-md h-[408px] w-[100%]">
+                class="rounded-md h-[509px] w-[100%]">
             <div class="absolute card-bg bottom-0 cards-bg  w-full flex justify-center items-center ">
                 <div class="w-full text-start" style=" box-shadow: 0px -25px 10px 0px rgba(0,0,0,0.75);">
     
@@ -1255,9 +1346,9 @@
         <div class="w-full flex  flex-col justify-center items-center space-y-4 pb-8">
             <div class="w-[90%] hidden sm:flex items-center space-x-4">
 
-                <div class="w-[308px] h-[409px] rounded-md relative ">
+                <div class="w-[308px] h-[509px] rounded-md relative ">
                     <img src=" https://learnwithleaders.com/wp-content/uploads/2022/12/New-Project-4.jpg" alt="India"
-                        class="rounded-md h-[408px] w-[100%]">
+                        class="rounded-md h-[509px] w-[100%]">
                     <div class="absolute bottom-0  cards-bg w-full flex justify-center items-center  ">
                         <div class="w-full text-start" style=" box-shadow: 0px -25px 10px 0px rgba(0,0,0,0.75);">
                             <h2>India</h2>
@@ -1266,9 +1357,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[308px] h-[409px] rounded-md relative ">
+                <div class="w-[308px] h-[509px] rounded-md relative ">
                     <img src=" https://learnwithleaders.com/wp-content/uploads/2022/12/New-Project-2.jpg"
-                        alt="Indonasia" class="rounded-md h-[408px] w-[100%]">
+                        alt="Indonasia" class="rounded-md h-[509px] w-[100%]">
                     <div class="absolute bottom-0  cards-bg w-full flex justify-center items-center  ">
                         <div class="w-full text-start" style=" box-shadow: 0px -25px 10px 0px rgba(0,0,0,0.75);">
 
@@ -1277,9 +1368,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[308px] h-[409px] rounded-md relative ">
+                <div class="w-[308px] h-[509px] rounded-md relative ">
                     <img src=" https://learnwithleaders.com/wp-content/uploads/2023/04/landmarks-of-malaysia.jpg"
-                        alt="Malaysia" class="rounded-md h-[408px] w-[100%]">
+                        alt="Malaysia" class="rounded-md h-[509px] w-[100%]">
                     <div class="absolute bottom-0  cards-bg w-full flex justify-center items-center ">
                         <div class="w-full text-start" style=" box-shadow: 0px -25px 10px 0px rgba(0,0,0,0.75);">
 
@@ -1839,8 +1930,9 @@
     <script src="js/student-achievements.js"></script>
     <script src="js/masterclass.js"></script>
     <script src="js/hero.js"></script>
-    <!-- <script src="js/dropdown.js"></script> -->
     <script src="js/collaboration.js"></script>
+    <script src="js/confenrence.js"></script>
+
 
 </body>
 
